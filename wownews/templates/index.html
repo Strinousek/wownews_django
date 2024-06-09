@@ -1,4 +1,11 @@
 {% extends "layout.html" %}
 {% block content %}
     <h1>Home Page</h1>
+    {% for new in news %}
+        <div>{{ new.title }}</div>
+        <div>{{ new.description }}</div>
+        <div>{{ new.image }}</div>
+        <div>{{ new.postedOn }}</div>
+        <div>{{ new.author }}</div>
+    {% endfor %}
 {% endblock content %}
